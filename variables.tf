@@ -17,3 +17,7 @@ variable "component" {
 variable "domain_name" {
   default = "deep90s.online"
 }
+
+variable "rule_priority" {
+    #type = string
+}
