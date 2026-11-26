@@ -193,7 +193,7 @@ resource "aws_lb_listener_rule" "main" {
   }
 }
 
-/* resource "terraform_data" "catalogue_delete" {
+resource "terraform_data" "catalogue_delete" {
   triggers_replace = [
     aws_instance.catalogue.id
   ]
@@ -203,4 +203,4 @@ resource "aws_lb_listener_rule" "main" {
   provisioner "local-exec" {
     command = "aws ec2 terminate-instances --instance-ids ${aws_instance.catalogue.id}"
   }
-} */
+}
